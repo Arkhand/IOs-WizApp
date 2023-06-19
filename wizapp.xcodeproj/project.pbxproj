@@ -1,0 +1,998 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0848EA3F6EA85D494B5C5462 /* CustomerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FB79538F386BAABE9C798 /* CustomerDetailViewController.swift */; };
+		108AC0DE033778BC9A8F24B4 /* PurchaseOrderHeaderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D27029F890436A3951A9E6 /* PurchaseOrderHeaderDetailViewController.swift */; };
+		108C434955B052E4142F4BB9 /* SupplierMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F30D47C021209E05812E1C /* SupplierMasterViewController.swift */; };
+		124ED4BC1E6D66335DD787AB /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD7664D11DE23659C77A8C /* LocalizedStrings.swift */; };
+		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		13293D47EE0467A45D4909F6 /* ApplicationUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B982AFD176EF8DE06A2693A8 /* ApplicationUIManager.swift */; };
+		1C09DD8A914DE5DDE4905EDA /* SharedFmwk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F60A034A07CF86145544204 /* SharedFmwk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		235B7DA8E966580A0804940F /* SAPOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 083B873EE3E4CD687A336C9C /* SAPOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		456F719B9CC070B76427F013 /* SalesOrderItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBA1CFB540D0D731D976605 /* SalesOrderItem.storyboard */; };
+		4781A84895277F8BF42547C6 /* ProductCategoryMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0CDD6BA81377B3E5026A4 /* ProductCategoryMasterViewController.swift */; };
+		47ECDD2DD5A44A2B3F641CA2 /* SAPFiori.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 190E5748D8C62A3743AB5FF6 /* SAPFiori.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		513F18234E8994A448960FCA /* ProductCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB18213EC461223CA1DCAF9 /* ProductCategory.storyboard */; };
+		56BB051D6F38DB3162E5E185 /* CellCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB879F05DBC1AA97FAA68D /* CellCreationHelper.swift */; };
+		5B3144B50EED68215C5756D1 /* SalesOrderHeaderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CE279EECFA1AB9BC08AB0 /* SalesOrderHeaderDetailViewController.swift */; };
+		5BB86271BAACD2CE1B5D2D27 /* ProductMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD479868D18232804EBFFE /* ProductMasterViewController.swift */; };
+		5F9024FF7CC237007897FF4C /* SalesOrderHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE9B5DA18ACD6CFEDA7433B /* SalesOrderHeader.storyboard */; };
+		5F90E3F0C802628E16C62165 /* ESPMContainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A00E660FF61335389B2B97 /* ESPMContainer.storyboard */; };
+		62721BC9A350751363702D84 /* SAPFiori.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190E5748D8C62A3743AB5FF6 /* SAPFiori.xcframework */; };
+		650FA13138CFCFF03F1B2395 /* SAPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2439FEA36CD2994191148EA /* SAPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		65122BF32A40B25F00725AA0 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65122BF22A40B25F00725AA0 /* ProductsTableViewController.swift */; };
+		65686DC32A3CD31F008F2D97 /* OverviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65686DC22A3CD31F008F2D97 /* OverviewTableViewController.swift */; };
+		6A813AA175534E5D47D8AA73 /* StockMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF0E939AE4C51B13698A79 /* StockMasterViewController.swift */; };
+		6A9EB6314D7343F02ED1261F /* ESPMContainerCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E8385C7A7DBE4EAC64C1E /* ESPMContainerCollectionsViewController.swift */; };
+		6B48C2EFEAB61E9514AEC6DB /* ESPMContainerFmwk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6DDC93CB094B02ED195A8E5 /* ESPMContainerFmwk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6C4C08F547DDEB2BDFA767F4 /* SAPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29BD6CC91C9211FDCC612802 /* SAPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7430666B5F029E8F5DD2AA65 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAA7654625EB7C6285EB743 /* StockDetailViewController.swift */; };
+		75D408F551142F8209B276BA /* SupplierDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4995A4688DD02693C03F8DDB /* SupplierDetailViewController.swift */; };
+		77DB11B4FE5A837E3BF9B732 /* SAPFioriLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA5DF98794DA82B1AE4B9B /* SAPFioriLoadingIndicator.swift */; };
+		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
+		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
+		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
+		7A5744B621DE553600E58C7F /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5744B521DE553600E58C7F /* UITests.swift */; };
+		7B6B3DEE0A117467C583BDB5 /* SalesOrderHeaderMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC7CD89024F92E3E4E9E85 /* SalesOrderHeaderMasterViewController.swift */; };
+		8386D9CC01C8B5C131F61C12 /* CustomerMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE868031AACF1A5B9FF916D /* CustomerMasterViewController.swift */; };
+		8B72538052DB08479ADF9FDB /* ProductText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3627BBBF9D9592E41CAFD28C /* ProductText.storyboard */; };
+		8CEA8D7C3419EF5AA92A00A3 /* PurchaseOrderHeaderMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A377A4106D936D3493EB960 /* PurchaseOrderHeaderMasterViewController.swift */; };
+		8EB05C5AC4077184E6AC1962 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1DC3A07A7CB9C0D11FF2FE /* AlertHelper.swift */; };
+		965812372B87CCADAFF86040 /* Supplier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF024CEAABFB9F7864BD36B /* Supplier.storyboard */; };
+		968DABDDE3698E46BD7912B8 /* SAPFioriFlows.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56E14AB8CF30EFE83485FD78 /* SAPFioriFlows.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9C8C895097A6C37417799AE8 /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083B873EE3E4CD687A336C9C /* SAPOData.xcframework */; };
+		9CF66EA1780DE04407FED249 /* SAPFioriFlows.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E14AB8CF30EFE83485FD78 /* SAPFioriFlows.xcframework */; };
+		9D595A98352C94A7420E371D /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A00F0E1AB053DA3FD10218F /* Customer.storyboard */; };
+		9E2D09703FD426065EA09D27 /* AppParameters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A73BC3F6817A9353BD5CB /* AppParameters.plist */; };
+		A6037638DA12F9A5E2067056 /* ProductCategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82492C27E3666B8A98F6507D /* ProductCategoryDetailViewController.swift */; };
+		B2391A2FEB0492AEF76E56B8 /* PurchaseOrderHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426290C8855074443EA41035 /* PurchaseOrderHeader.storyboard */; };
+		B29400C32C5CF766BD04497F /* ODataOnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EB46AF9B5A3212D7B10B4 /* ODataOnboardingStep.swift */; };
+		B3CEBF03BEE175CAE353F3AA /* Stock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE403D2A66E14D5270F573DF /* Stock.storyboard */; };
+		BC7CC3D244F1874EE57880E0 /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F09141DADF510DF941490E /* DestinationsViewController.swift */; };
+		BF9EDF02703119370BA48FC9 /* PurchaseOrderItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830FDD91A2E8568CDD1153EB /* PurchaseOrderItemDetailViewController.swift */; };
+		C2EB55E6905DFEBEDE17AE74 /* SalesOrderItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFADB0C4119EAD06939919 /* SalesOrderItemDetailViewController.swift */; };
+		C363C94B30BCBF3B3505DADE /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A10AE57DE8BA6F1AF231996 /* Product.storyboard */; };
+		C38B74ABF31D784404DEAEA4 /* ProductTextDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA99BF2EEBEB05F9A52E85C /* ProductTextDetailViewController.swift */; };
+		C9B2C171E5ACF970453479B9 /* PurchaseOrderItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D15F8381561685D6E71D10 /* PurchaseOrderItem.storyboard */; };
+		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
+		DAAB0B2E22320ABD15A9432A /* SAPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2439FEA36CD2994191148EA /* SAPFoundation.xcframework */; };
+		DD328092C792C8C02439CC03 /* OnboardingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4571542FAE7AB8E467BAAB /* OnboardingErrorHandler.swift */; };
+		DD4556F208D3721487884A7E /* OnboardingFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CEE82E23EEBF02725040E4 /* OnboardingFlowProvider.swift */; };
+		E01BB8699F60C95A0A29422B /* SharedFmwk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F60A034A07CF86145544204 /* SharedFmwk.framework */; };
+		E0E31DEE723FD2178417DE39 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A3FD48ABBDFF01ADB2DCC4 /* ProductDetailViewController.swift */; };
+		EB36940B32729B5933432EC0 /* ConfigurationProvider.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2972DB4C70B750BBAD9F6F40 /* ConfigurationProvider.plist */; };
+		EC4DB3932F1DC355040BBF02 /* PurchaseOrderItemMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E2F70D771FF4412966C06 /* PurchaseOrderItemMasterViewController.swift */; };
+		ED6B0A1971408B189770C8DE /* SAPCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BD6CC91C9211FDCC612802 /* SAPCommon.xcframework */; };
+		EE5E02F6560FFED1242AB034 /* ESPMContainerFmwk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DDC93CB094B02ED195A8E5 /* ESPMContainerFmwk.framework */; };
+		F7975B41FFF42B96ECD76AC1 /* ProductTextMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81D25786F3E6B04CF008C1 /* ProductTextMasterViewController.swift */; };
+		FAB690740DB4FC585C2ED458 /* SalesOrderItemMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE298B21D7C2F980D4D53DA8 /* SalesOrderItemMasterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A5744B821DE553700E58C7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A1315AD1D4B982000A5DA56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A1315B41D4B982000A5DA56;
+			remoteInfo = wizapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6B48C2EFEAB61E9514AEC6DB /* ESPMContainerFmwk.framework in Embed Frameworks */,
+				47ECDD2DD5A44A2B3F641CA2 /* SAPFiori.xcframework in Embed Frameworks */,
+				650FA13138CFCFF03F1B2395 /* SAPFoundation.xcframework in Embed Frameworks */,
+				968DABDDE3698E46BD7912B8 /* SAPFioriFlows.xcframework in Embed Frameworks */,
+				1C09DD8A914DE5DDE4905EDA /* SharedFmwk.framework in Embed Frameworks */,
+				235B7DA8E966580A0804940F /* SAPOData.xcframework in Embed Frameworks */,
+				6C4C08F547DDEB2BDFA767F4 /* SAPCommon.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		004256D61210A338DE6B9477 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductText.storyboard; sourceTree = "<group>"; };
+		083B873EE3E4CD687A336C9C /* SAPOData.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = SAPOData.xcframework; path = "../Release-xcframework/SAPOData.xcframework"; sourceTree = "<group>"; };
+		10A3FD48ABBDFF01ADB2DCC4 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductDetailViewController.swift; path = ViewControllers/ESPMContainer/Product/ProductDetailViewController.swift; sourceTree = "<group>"; };
+		11AD479868D18232804EBFFE /* ProductMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductMasterViewController.swift; path = ViewControllers/ESPMContainer/Product/ProductMasterViewController.swift; sourceTree = "<group>"; };
+		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
+		190E5748D8C62A3743AB5FF6 /* SAPFiori.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = SAPFiori.xcframework; path = "../Release-xcframework/SAPFiori.xcframework"; sourceTree = "<group>"; };
+		1AF0CDD6BA81377B3E5026A4 /* ProductCategoryMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductCategoryMasterViewController.swift; path = ViewControllers/ESPMContainer/ProductCategory/ProductCategoryMasterViewController.swift; sourceTree = "<group>"; };
+		1BE868031AACF1A5B9FF916D /* CustomerMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerMasterViewController.swift; path = ViewControllers/ESPMContainer/Customer/CustomerMasterViewController.swift; sourceTree = "<group>"; };
+		1FA99BF2EEBEB05F9A52E85C /* ProductTextDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductTextDetailViewController.swift; path = ViewControllers/ESPMContainer/ProductText/ProductTextDetailViewController.swift; sourceTree = "<group>"; };
+		22F30D47C021209E05812E1C /* SupplierMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplierMasterViewController.swift; path = ViewControllers/ESPMContainer/Supplier/SupplierMasterViewController.swift; sourceTree = "<group>"; };
+		285CE279EECFA1AB9BC08AB0 /* SalesOrderHeaderDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesOrderHeaderDetailViewController.swift; path = ViewControllers/ESPMContainer/SalesOrderHeader/SalesOrderHeaderDetailViewController.swift; sourceTree = "<group>"; };
+		2972DB4C70B750BBAD9F6F40 /* ConfigurationProvider.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = ConfigurationProvider.plist; path = Onboarding/ConfigurationProvider.plist; sourceTree = "<group>"; };
+		29BD6CC91C9211FDCC612802 /* SAPCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = SAPCommon.xcframework; path = "../Release-xcframework/SAPCommon.xcframework"; sourceTree = "<group>"; };
+		376E2F70D771FF4412966C06 /* PurchaseOrderItemMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseOrderItemMasterViewController.swift; path = ViewControllers/ESPMContainer/PurchaseOrderItem/PurchaseOrderItemMasterViewController.swift; sourceTree = "<group>"; };
+		3A81D25786F3E6B04CF008C1 /* ProductTextMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductTextMasterViewController.swift; path = ViewControllers/ESPMContainer/ProductText/ProductTextMasterViewController.swift; sourceTree = "<group>"; };
+		3F60A034A07CF86145544204 /* SharedFmwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 1; path = SharedFmwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428401D631C62C7847944EC9 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Customer.storyboard; sourceTree = "<group>"; };
+		4356771A7506F58490AF8DB7 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Supplier.storyboard; sourceTree = "<group>"; };
+		491708CCD95ECBBB9D2A4764 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PurchaseOrderHeader.storyboard; sourceTree = "<group>"; };
+		4995A4688DD02693C03F8DDB /* SupplierDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupplierDetailViewController.swift; path = ViewControllers/ESPMContainer/Supplier/SupplierDetailViewController.swift; sourceTree = "<group>"; };
+		4B51806877AC70B846B00769 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SalesOrderHeader.storyboard; sourceTree = "<group>"; };
+		4FEB879F05DBC1AA97FAA68D /* CellCreationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellCreationHelper.swift; path = Utils/CellCreationHelper.swift; sourceTree = "<group>"; };
+		56E14AB8CF30EFE83485FD78 /* SAPFioriFlows.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = SAPFioriFlows.xcframework; path = "../Release-xcframework/SAPFioriFlows.xcframework"; sourceTree = "<group>"; };
+		5C4571542FAE7AB8E467BAAB /* OnboardingErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingErrorHandler.swift; path = Onboarding/OnboardingErrorHandler.swift; sourceTree = "<group>"; };
+		65122BF22A40B25F00725AA0 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		65686DC22A3CD31F008F2D97 /* OverviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTableViewController.swift; sourceTree = "<group>"; };
+		6FBF0E939AE4C51B13698A79 /* StockMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StockMasterViewController.swift; path = ViewControllers/ESPMContainer/Stock/StockMasterViewController.swift; sourceTree = "<group>"; };
+		774FB79538F386BAABE9C798 /* CustomerDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomerDetailViewController.swift; path = ViewControllers/ESPMContainer/Customer/CustomerDetailViewController.swift; sourceTree = "<group>"; };
+		7A1315B51D4B982000A5DA56 /* wizapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wizapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7A5744B321DE553600E58C7F /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5744B521DE553600E58C7F /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		7A5744B721DE553700E58C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80050A92EA1A77773A881F8B /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Product.storyboard; sourceTree = "<group>"; };
+		82492C27E3666B8A98F6507D /* ProductCategoryDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProductCategoryDetailViewController.swift; path = ViewControllers/ESPMContainer/ProductCategory/ProductCategoryDetailViewController.swift; sourceTree = "<group>"; };
+		830FDD91A2E8568CDD1153EB /* PurchaseOrderItemDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseOrderItemDetailViewController.swift; path = ViewControllers/ESPMContainer/PurchaseOrderItem/PurchaseOrderItemDetailViewController.swift; sourceTree = "<group>"; };
+		8428833E9BB6F01F71C55D71 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PurchaseOrderItem.storyboard; sourceTree = "<group>"; };
+		843E8385C7A7DBE4EAC64C1E /* ESPMContainerCollectionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ESPMContainerCollectionsViewController.swift; path = ViewControllers/ESPMContainer/ESPMContainerCollectionsViewController.swift; sourceTree = "<group>"; };
+		8A377A4106D936D3493EB960 /* PurchaseOrderHeaderMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseOrderHeaderMasterViewController.swift; path = ViewControllers/ESPMContainer/PurchaseOrderHeader/PurchaseOrderHeaderMasterViewController.swift; sourceTree = "<group>"; };
+		8AAA7654625EB7C6285EB743 /* StockDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StockDetailViewController.swift; path = ViewControllers/ESPMContainer/Stock/StockDetailViewController.swift; sourceTree = "<group>"; };
+		90D27029F890436A3951A9E6 /* PurchaseOrderHeaderDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PurchaseOrderHeaderDetailViewController.swift; path = ViewControllers/ESPMContainer/PurchaseOrderHeader/PurchaseOrderHeaderDetailViewController.swift; sourceTree = "<group>"; };
+		9137606C255ABF5C0059ABE7 /* wizapp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = wizapp.entitlements; sourceTree = "<group>"; };
+		9554EEBEB029D66976683C1C /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ESPMContainer.storyboard; sourceTree = "<group>"; };
+		9BBDC343ED31AAEA3758A222 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SalesOrderItem.storyboard; sourceTree = "<group>"; };
+		9F4A73BC3F6817A9353BD5CB /* AppParameters.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = AppParameters.plist; path = Onboarding/AppParameters.plist; sourceTree = "<group>"; };
+		A2439FEA36CD2994191148EA /* SAPFoundation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = SAPFoundation.xcframework; path = "../Release-xcframework/SAPFoundation.xcframework"; sourceTree = "<group>"; };
+		AAFC7CD89024F92E3E4E9E85 /* SalesOrderHeaderMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesOrderHeaderMasterViewController.swift; path = ViewControllers/ESPMContainer/SalesOrderHeader/SalesOrderHeaderMasterViewController.swift; sourceTree = "<group>"; };
+		AF1DC3A07A7CB9C0D11FF2FE /* AlertHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertHelper.swift; path = Utils/AlertHelper.swift; sourceTree = "<group>"; };
+		B524A5C478E7BA163C1A0BCF /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Stock.storyboard; sourceTree = "<group>"; };
+		B982AFD176EF8DE06A2693A8 /* ApplicationUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationUIManager.swift; path = Onboarding/ApplicationUIManager.swift; sourceTree = "<group>"; };
+		BBAFC5D87BBD4FC9FB92E340 /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductCategory.storyboard; sourceTree = "<group>"; };
+		C3F09141DADF510DF941490E /* DestinationsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DestinationsViewController.swift; path = ViewControllers/DestinationsViewController.swift; sourceTree = "<group>"; };
+		C6CEE82E23EEBF02725040E4 /* OnboardingFlowProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingFlowProvider.swift; path = Onboarding/OnboardingFlowProvider.swift; sourceTree = "<group>"; };
+		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDAFADB0C4119EAD06939919 /* SalesOrderItemDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesOrderItemDetailViewController.swift; path = ViewControllers/ESPMContainer/SalesOrderItem/SalesOrderItemDetailViewController.swift; sourceTree = "<group>"; };
+		DE298B21D7C2F980D4D53DA8 /* SalesOrderItemMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesOrderItemMasterViewController.swift; path = ViewControllers/ESPMContainer/SalesOrderItem/SalesOrderItemMasterViewController.swift; sourceTree = "<group>"; };
+		DFAD7664D11DE23659C77A8C /* LocalizedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		E83EB46AF9B5A3212D7B10B4 /* ODataOnboardingStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODataOnboardingStep.swift; path = OData/ODataOnboardingStep.swift; sourceTree = "<group>"; };
+		EECA5DF98794DA82B1AE4B9B /* SAPFioriLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAPFioriLoadingIndicator.swift; path = Utils/SAPFioriLoadingIndicator.swift; sourceTree = "<group>"; };
+		F6DDC93CB094B02ED195A8E5 /* ESPMContainerFmwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 1; path = ESPMContainerFmwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5E02F6560FFED1242AB034 /* ESPMContainerFmwk.framework in Frameworks */,
+				62721BC9A350751363702D84 /* SAPFiori.xcframework in Frameworks */,
+				DAAB0B2E22320ABD15A9432A /* SAPFoundation.xcframework in Frameworks */,
+				9CF66EA1780DE04407FED249 /* SAPFioriFlows.xcframework in Frameworks */,
+				E01BB8699F60C95A0A29422B /* SharedFmwk.framework in Frameworks */,
+				9C8C895097A6C37417799AE8 /* SAPOData.xcframework in Frameworks */,
+				ED6B0A1971408B189770C8DE /* SAPCommon.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744B021DE553600E58C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19E5D99E05F67E6705EC5E93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EECA5DF98794DA82B1AE4B9B /* SAPFioriLoadingIndicator.swift */,
+				4FEB879F05DBC1AA97FAA68D /* CellCreationHelper.swift */,
+				AF1DC3A07A7CB9C0D11FF2FE /* AlertHelper.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2B1665566BD06D7786C216B9 /* PurchaseOrderHeader */ = {
+			isa = PBXGroup;
+			children = (
+				8A377A4106D936D3493EB960 /* PurchaseOrderHeaderMasterViewController.swift */,
+				90D27029F890436A3951A9E6 /* PurchaseOrderHeaderDetailViewController.swift */,
+				426290C8855074443EA41035 /* PurchaseOrderHeader.storyboard */,
+			);
+			name = PurchaseOrderHeader;
+			sourceTree = "<group>";
+		};
+		3B0E88A52784B1465C7837CC /* SalesOrderItem */ = {
+			isa = PBXGroup;
+			children = (
+				DE298B21D7C2F980D4D53DA8 /* SalesOrderItemMasterViewController.swift */,
+				CDAFADB0C4119EAD06939919 /* SalesOrderItemDetailViewController.swift */,
+				7EBA1CFB540D0D731D976605 /* SalesOrderItem.storyboard */,
+			);
+			name = SalesOrderItem;
+			sourceTree = "<group>";
+		};
+		67E47840A1A1337FA84A410A /* PurchaseOrderItem */ = {
+			isa = PBXGroup;
+			children = (
+				376E2F70D771FF4412966C06 /* PurchaseOrderItemMasterViewController.swift */,
+				830FDD91A2E8568CDD1153EB /* PurchaseOrderItemDetailViewController.swift */,
+				94D15F8381561685D6E71D10 /* PurchaseOrderItem.storyboard */,
+			);
+			name = PurchaseOrderItem;
+			sourceTree = "<group>";
+		};
+		69D91AAF0B89584159DD9A37 /* SalesOrderHeader */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC7CD89024F92E3E4E9E85 /* SalesOrderHeaderMasterViewController.swift */,
+				285CE279EECFA1AB9BC08AB0 /* SalesOrderHeaderDetailViewController.swift */,
+				3CE9B5DA18ACD6CFEDA7433B /* SalesOrderHeader.storyboard */,
+			);
+			name = SalesOrderHeader;
+			sourceTree = "<group>";
+		};
+		7A1315AC1D4B982000A5DA56 = {
+			isa = PBXGroup;
+			children = (
+				7A16F06C1FD1B3C700D2FABD /* README.md */,
+				7A1315B71D4B982000A5DA56 /* wizapp */,
+				7A5744B421DE553600E58C7F /* UITests */,
+				7A1315B61D4B982000A5DA56 /* Products */,
+				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1315B61D4B982000A5DA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B51D4B982000A5DA56 /* wizapp.app */,
+				7A5744B321DE553600E58C7F /* UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1315B71D4B982000A5DA56 /* wizapp */ = {
+			isa = PBXGroup;
+			children = (
+				9137606C255ABF5C0059ABE7 /* wizapp.entitlements */,
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
+				7A1315C61D4B982000A5DA56 /* Info.plist */,
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
+				C71F1DC31A89F5C6AC1E60EE /* ViewControllers */,
+				19E5D99E05F67E6705EC5E93 /* Utils */,
+				B32C02CD97A0BD5777AE50C4 /* OData */,
+				AFD8A6C9EC28906F6086348E /* Onboarding */,
+				DFAD7664D11DE23659C77A8C /* LocalizedStrings.swift */,
+				65686DC22A3CD31F008F2D97 /* OverviewTableViewController.swift */,
+				65122BF22A40B25F00725AA0 /* ProductsTableViewController.swift */,
+			);
+			path = wizapp;
+			sourceTree = "<group>";
+		};
+		7A1315CC1D4B990B00A5DA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6DDC93CB094B02ED195A8E5 /* ESPMContainerFmwk.framework */,
+				190E5748D8C62A3743AB5FF6 /* SAPFiori.xcframework */,
+				A2439FEA36CD2994191148EA /* SAPFoundation.xcframework */,
+				56E14AB8CF30EFE83485FD78 /* SAPFioriFlows.xcframework */,
+				3F60A034A07CF86145544204 /* SharedFmwk.framework */,
+				083B873EE3E4CD687A336C9C /* SAPOData.xcframework */,
+				29BD6CC91C9211FDCC612802 /* SAPCommon.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5744B421DE553600E58C7F /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A5744B521DE553600E58C7F /* UITests.swift */,
+				7A5744B721DE553700E58C7F /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		8EE7C061221DAA9B03F59FD2 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				11AD479868D18232804EBFFE /* ProductMasterViewController.swift */,
+				10A3FD48ABBDFF01ADB2DCC4 /* ProductDetailViewController.swift */,
+				6A10AE57DE8BA6F1AF231996 /* Product.storyboard */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		A2059999946F97B31E8FEB9E /* ProductText */ = {
+			isa = PBXGroup;
+			children = (
+				3A81D25786F3E6B04CF008C1 /* ProductTextMasterViewController.swift */,
+				1FA99BF2EEBEB05F9A52E85C /* ProductTextDetailViewController.swift */,
+				3627BBBF9D9592E41CAFD28C /* ProductText.storyboard */,
+			);
+			name = ProductText;
+			sourceTree = "<group>";
+		};
+		AFD8A6C9EC28906F6086348E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C6CEE82E23EEBF02725040E4 /* OnboardingFlowProvider.swift */,
+				5C4571542FAE7AB8E467BAAB /* OnboardingErrorHandler.swift */,
+				B982AFD176EF8DE06A2693A8 /* ApplicationUIManager.swift */,
+				2972DB4C70B750BBAD9F6F40 /* ConfigurationProvider.plist */,
+				9F4A73BC3F6817A9353BD5CB /* AppParameters.plist */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		B32C02CD97A0BD5777AE50C4 /* OData */ = {
+			isa = PBXGroup;
+			children = (
+				E83EB46AF9B5A3212D7B10B4 /* ODataOnboardingStep.swift */,
+			);
+			name = OData;
+			sourceTree = "<group>";
+		};
+		C71F1DC31A89F5C6AC1E60EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBA941BDC48BB0ECCB877B67 /* ESPMContainer */,
+				C3F09141DADF510DF941490E /* DestinationsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA9678FB1C91B3DED9462F85 /* Supplier */ = {
+			isa = PBXGroup;
+			children = (
+				22F30D47C021209E05812E1C /* SupplierMasterViewController.swift */,
+				4995A4688DD02693C03F8DDB /* SupplierDetailViewController.swift */,
+				6AF024CEAABFB9F7864BD36B /* Supplier.storyboard */,
+			);
+			name = Supplier;
+			sourceTree = "<group>";
+		};
+		D7B28D4BE67EE9E0FEE92828 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				1BE868031AACF1A5B9FF916D /* CustomerMasterViewController.swift */,
+				774FB79538F386BAABE9C798 /* CustomerDetailViewController.swift */,
+				0A00F0E1AB053DA3FD10218F /* Customer.storyboard */,
+			);
+			name = Customer;
+			sourceTree = "<group>";
+		};
+		DBA941BDC48BB0ECCB877B67 /* ESPMContainer */ = {
+			isa = PBXGroup;
+			children = (
+				CA9678FB1C91B3DED9462F85 /* Supplier */,
+				DDE2C844CE1318EAA2F2C1ED /* Stock */,
+				3B0E88A52784B1465C7837CC /* SalesOrderItem */,
+				69D91AAF0B89584159DD9A37 /* SalesOrderHeader */,
+				67E47840A1A1337FA84A410A /* PurchaseOrderItem */,
+				2B1665566BD06D7786C216B9 /* PurchaseOrderHeader */,
+				A2059999946F97B31E8FEB9E /* ProductText */,
+				FB76A29E21A7A890E6E1E8C3 /* ProductCategory */,
+				8EE7C061221DAA9B03F59FD2 /* Product */,
+				D7B28D4BE67EE9E0FEE92828 /* Customer */,
+				843E8385C7A7DBE4EAC64C1E /* ESPMContainerCollectionsViewController.swift */,
+				56A00E660FF61335389B2B97 /* ESPMContainer.storyboard */,
+			);
+			name = ESPMContainer;
+			sourceTree = "<group>";
+		};
+		DDE2C844CE1318EAA2F2C1ED /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				6FBF0E939AE4C51B13698A79 /* StockMasterViewController.swift */,
+				8AAA7654625EB7C6285EB743 /* StockDetailViewController.swift */,
+				DE403D2A66E14D5270F573DF /* Stock.storyboard */,
+			);
+			name = Stock;
+			sourceTree = "<group>";
+		};
+		FB76A29E21A7A890E6E1E8C3 /* ProductCategory */ = {
+			isa = PBXGroup;
+			children = (
+				1AF0CDD6BA81377B3E5026A4 /* ProductCategoryMasterViewController.swift */,
+				82492C27E3666B8A98F6507D /* ProductCategoryDetailViewController.swift */,
+				BCB18213EC461223CA1DCAF9 /* ProductCategory.storyboard */,
+			);
+			name = ProductCategory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1315B41D4B982000A5DA56 /* wizapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "wizapp" */;
+			buildPhases = (
+				AE0C88F42403A2B5002A9565 /* Codesign Binaries */,
+				7A1315B11D4B982000A5DA56 /* Sources */,
+				7A1315B21D4B982000A5DA56 /* Frameworks */,
+				7A1315B31D4B982000A5DA56 /* Resources */,
+				758AC1C31D5A265200311F39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wizapp;
+			productName = wizapp;
+			productReference = 7A1315B51D4B982000A5DA56 /* wizapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A5744B221DE553600E58C7F /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A5744BC21DE553700E58C7F /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				7A5744AF21DE553600E58C7F /* Sources */,
+				7A5744B021DE553600E58C7F /* Frameworks */,
+				7A5744B121DE553600E58C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A5744B921DE553700E58C7F /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 7A5744B321DE553600E58C7F /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1315AD1D4B982000A5DA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					7A1315B41D4B982000A5DA56 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = "";
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					7A5744B221DE553600E58C7F = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A1315B41D4B982000A5DA56;
+					};
+				};
+			};
+			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "wizapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1315AC1D4B982000A5DA56;
+			productRefGroup = 7A1315B61D4B982000A5DA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1315B41D4B982000A5DA56 /* wizapp */,
+				7A5744B221DE553600E58C7F /* UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1315B31D4B982000A5DA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
+				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
+				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
+				965812372B87CCADAFF86040 /* Supplier.storyboard in Resources */,
+				B3CEBF03BEE175CAE353F3AA /* Stock.storyboard in Resources */,
+				456F719B9CC070B76427F013 /* SalesOrderItem.storyboard in Resources */,
+				5F9024FF7CC237007897FF4C /* SalesOrderHeader.storyboard in Resources */,
+				C9B2C171E5ACF970453479B9 /* PurchaseOrderItem.storyboard in Resources */,
+				B2391A2FEB0492AEF76E56B8 /* PurchaseOrderHeader.storyboard in Resources */,
+				8B72538052DB08479ADF9FDB /* ProductText.storyboard in Resources */,
+				513F18234E8994A448960FCA /* ProductCategory.storyboard in Resources */,
+				C363C94B30BCBF3B3505DADE /* Product.storyboard in Resources */,
+				9D595A98352C94A7420E371D /* Customer.storyboard in Resources */,
+				5F90E3F0C802628E16C62165 /* ESPMContainer.storyboard in Resources */,
+				EB36940B32729B5933432EC0 /* ConfigurationProvider.plist in Resources */,
+				9E2D09703FD426065EA09D27 /* AppParameters.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744B121DE553600E58C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE0C88F42403A2B5002A9565 /* Codesign Binaries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Codesign Binaries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python3 ../scripts/codesign.py\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1315B11D4B982000A5DA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
+				108C434955B052E4142F4BB9 /* SupplierMasterViewController.swift in Sources */,
+				75D408F551142F8209B276BA /* SupplierDetailViewController.swift in Sources */,
+				6A813AA175534E5D47D8AA73 /* StockMasterViewController.swift in Sources */,
+				7430666B5F029E8F5DD2AA65 /* StockDetailViewController.swift in Sources */,
+				FAB690740DB4FC585C2ED458 /* SalesOrderItemMasterViewController.swift in Sources */,
+				C2EB55E6905DFEBEDE17AE74 /* SalesOrderItemDetailViewController.swift in Sources */,
+				7B6B3DEE0A117467C583BDB5 /* SalesOrderHeaderMasterViewController.swift in Sources */,
+				5B3144B50EED68215C5756D1 /* SalesOrderHeaderDetailViewController.swift in Sources */,
+				EC4DB3932F1DC355040BBF02 /* PurchaseOrderItemMasterViewController.swift in Sources */,
+				BF9EDF02703119370BA48FC9 /* PurchaseOrderItemDetailViewController.swift in Sources */,
+				8CEA8D7C3419EF5AA92A00A3 /* PurchaseOrderHeaderMasterViewController.swift in Sources */,
+				108AC0DE033778BC9A8F24B4 /* PurchaseOrderHeaderDetailViewController.swift in Sources */,
+				F7975B41FFF42B96ECD76AC1 /* ProductTextMasterViewController.swift in Sources */,
+				65686DC32A3CD31F008F2D97 /* OverviewTableViewController.swift in Sources */,
+				C38B74ABF31D784404DEAEA4 /* ProductTextDetailViewController.swift in Sources */,
+				4781A84895277F8BF42547C6 /* ProductCategoryMasterViewController.swift in Sources */,
+				A6037638DA12F9A5E2067056 /* ProductCategoryDetailViewController.swift in Sources */,
+				5BB86271BAACD2CE1B5D2D27 /* ProductMasterViewController.swift in Sources */,
+				65122BF32A40B25F00725AA0 /* ProductsTableViewController.swift in Sources */,
+				E0E31DEE723FD2178417DE39 /* ProductDetailViewController.swift in Sources */,
+				8386D9CC01C8B5C131F61C12 /* CustomerMasterViewController.swift in Sources */,
+				0848EA3F6EA85D494B5C5462 /* CustomerDetailViewController.swift in Sources */,
+				6A9EB6314D7343F02ED1261F /* ESPMContainerCollectionsViewController.swift in Sources */,
+				BC7CC3D244F1874EE57880E0 /* DestinationsViewController.swift in Sources */,
+				77DB11B4FE5A837E3BF9B732 /* SAPFioriLoadingIndicator.swift in Sources */,
+				56BB051D6F38DB3162E5E185 /* CellCreationHelper.swift in Sources */,
+				8EB05C5AC4077184E6AC1962 /* AlertHelper.swift in Sources */,
+				B29400C32C5CF766BD04497F /* ODataOnboardingStep.swift in Sources */,
+				DD4556F208D3721487884A7E /* OnboardingFlowProvider.swift in Sources */,
+				DD328092C792C8C02439CC03 /* OnboardingErrorHandler.swift in Sources */,
+				13293D47EE0467A45D4909F6 /* ApplicationUIManager.swift in Sources */,
+				124ED4BC1E6D66335DD787AB /* LocalizedStrings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A5744AF21DE553600E58C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5744B621DE553600E58C7F /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A5744B921DE553700E58C7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A1315B41D4B982000A5DA56 /* wizapp */;
+			targetProxy = 7A5744B821DE553700E58C7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A00F0E1AB053DA3FD10218F /* Customer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428401D631C62C7847944EC9 /* Base */,
+			);
+			name = Customer.storyboard;
+			path = ViewControllers/ESPMContainer/Customer;
+			sourceTree = "<group>";
+		};
+		3627BBBF9D9592E41CAFD28C /* ProductText.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004256D61210A338DE6B9477 /* Base */,
+			);
+			name = ProductText.storyboard;
+			path = ViewControllers/ESPMContainer/ProductText;
+			sourceTree = "<group>";
+		};
+		3CE9B5DA18ACD6CFEDA7433B /* SalesOrderHeader.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B51806877AC70B846B00769 /* Base */,
+			);
+			name = SalesOrderHeader.storyboard;
+			path = ViewControllers/ESPMContainer/SalesOrderHeader;
+			sourceTree = "<group>";
+		};
+		426290C8855074443EA41035 /* PurchaseOrderHeader.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491708CCD95ECBBB9D2A4764 /* Base */,
+			);
+			name = PurchaseOrderHeader.storyboard;
+			path = ViewControllers/ESPMContainer/PurchaseOrderHeader;
+			sourceTree = "<group>";
+		};
+		56A00E660FF61335389B2B97 /* ESPMContainer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9554EEBEB029D66976683C1C /* Base */,
+			);
+			name = ESPMContainer.storyboard;
+			path = ViewControllers/ESPMContainer;
+			sourceTree = "<group>";
+		};
+		6A10AE57DE8BA6F1AF231996 /* Product.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80050A92EA1A77773A881F8B /* Base */,
+			);
+			name = Product.storyboard;
+			path = ViewControllers/ESPMContainer/Product;
+			sourceTree = "<group>";
+		};
+		6AF024CEAABFB9F7864BD36B /* Supplier.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4356771A7506F58490AF8DB7 /* Base */,
+			);
+			name = Supplier.storyboard;
+			path = ViewControllers/ESPMContainer/Supplier;
+			sourceTree = "<group>";
+		};
+		7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1315C41D4B982000A5DA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7EBA1CFB540D0D731D976605 /* SalesOrderItem.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BBDC343ED31AAEA3758A222 /* Base */,
+			);
+			name = SalesOrderItem.storyboard;
+			path = ViewControllers/ESPMContainer/SalesOrderItem;
+			sourceTree = "<group>";
+		};
+		94D15F8381561685D6E71D10 /* PurchaseOrderItem.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8428833E9BB6F01F71C55D71 /* Base */,
+			);
+			name = PurchaseOrderItem.storyboard;
+			path = ViewControllers/ESPMContainer/PurchaseOrderItem;
+			sourceTree = "<group>";
+		};
+		BCB18213EC461223CA1DCAF9 /* ProductCategory.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBAFC5D87BBD4FC9FB92E340 /* Base */,
+			);
+			name = ProductCategory.storyboard;
+			path = ViewControllers/ESPMContainer/ProductCategory;
+			sourceTree = "<group>";
+		};
+		CBCA7A9B1E3778A9001AF49E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB909D801E38CA8800218154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE403D2A66E14D5270F573DF /* Stock.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B524A5C478E7BA163C1A0BCF /* Base */,
+			);
+			name = Stock.storyboard;
+			path = ViewControllers/ESPMContainer/Stock;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1315C71D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1315C81D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1315CA1D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wizapp/wizapp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = wizapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.wizapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A1315CB1D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wizapp/wizapp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = wizapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.wizapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7A5744BA21DE553700E58C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wizapp;
+			};
+			name = Debug;
+		};
+		7A5744BB21DE553700E58C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wizapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "wizapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315C71D4B982000A5DA56 /* Debug */,
+				7A1315C81D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "wizapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315CA1D4B982000A5DA56 /* Debug */,
+				7A1315CB1D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A5744BC21DE553700E58C7F /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5744BA21DE553700E58C7F /* Debug */,
+				7A5744BB21DE553700E58C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1315AD1D4B982000A5DA56 /* Project object */;
+}
